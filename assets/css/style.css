@@ -1,16 +1,17 @@
+@import url(../css/reset.css);
 @import url(../css/header.css);
+@import url(../css/tabela.css);
+@import url(../css/formulario-produto.css);
 
 :root{
     font-family: 'Open Sans';
 }
 
 body{
-    background-image: linear-gradient( to right,    #000000,  #181818);
     color: #FFFFFF;
+    background-image: url(../img/background2.png);
+    background-position: 100% 0%;
 
 }
 
-p{
-    color:
-}
 

@@ -1,0 +1,56 @@
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 4em auto;
+    width: 70%;
+
+
+    
+}
+
+.label{
+    margin-left: 0.5em;
+}
+
+input{
+    background-color: #505050;
+    margin: 0.5em;
+    
+}
+
+.input-padrao{
+    border: 1px #2e2e2e;
+    border-radius: 8px;
+    height: 32px;
+    width: 350px;
+}
+
+::placeholder{
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+}
+
+.adicionar{
+    background-color:  #03bb85;
+    border-radius: 8px;
+    border-style: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    height: 60px;
+    text-align: center;
+    width: 180px;
+
+}
+
+.adicionar:hover{
+    background-color: #31ecb4;
+    cursor: pointer;
+}
+
+.input-padrao{
+    color: #FFFFFF;
+    padding-left: 2em;
+    width: 600px
+}

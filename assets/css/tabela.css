@@ -1,0 +1,28 @@
+.tabela-produtos{
+    margin: 4em auto;
+}
+
+.produto{
+    margin: 4em auto;
+}
+
+
+.produto__td{
+    background-color: #2e2e2e;
+    border: 1px solid #525050;
+
+    margin: 0.25em 1em; 
+    padding: 0.5em;
+    text-align: center;
+
+}
+
+.produto__excluir:hover{
+    background: rgb(243, 57, 57);
+    font-weight: 600;
+    transition: 500ms;  
+    cursor: pointer ;
+
+}
+
+
