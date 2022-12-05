@@ -2,19 +2,45 @@
     margin: 4em auto;
 }
 
-.produto{
+.produto, .comissao{
     margin: 4em auto;
 }
 
 
-.produto__td{
+.produto__td, .comissao__td{
     background-color: #2e2e2e;
     border: 1px solid #525050;
-
     margin: 0.25em 1em; 
     padding: 0.5em;
     text-align: center;
 
+}
+
+.produto__excluir:hover, .comissao__excluir:hover{
+    background: rgb(243, 57, 57);
+    font-weight: 600;
+    transition: 500ms;  
+    cursor: pointer ;
+
+}   
+
+.areceber__td{
+    background-color: #2e2e2e;
+    border: 1px solid #525050;
+    margin: 0.25em 1em; 
+    padding: 0.5em;
+    text-align: center;
+
+}
+
+#tabela-areceber{
+    margin: 1em auto;
+
+}
+
+#areceber{
+    background-color: #03bb85;
+    font-weight: 600;
 }
 
 .produto__excluir:hover{
@@ -22,6 +48,27 @@
     font-weight: 600;
     transition: 500ms;  
     cursor: pointer ;
+
+}
+
+.formulario-adicionar{
+
+}
+
+@media screen and (max-width:730px) {
+    
+
+.produto__td, .comissao__td{
+    padding:1em;
+    margin: 0;
+    list-s
+
+}
+
+.tabela-comissao{
+    margin: 0 1em;
+    font-size: 13px;
+}
 
 }
 

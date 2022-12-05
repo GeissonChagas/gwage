@@ -4,7 +4,6 @@ form{
     margin: 4em auto;
     width: 70%;
 
-
     
 }
 
@@ -30,7 +29,7 @@ input{
     font-family: 'Open Sans';
 }
 
-.adicionar{
+#adicionar{
     background-color:  #03bb85;
     border-radius: 8px;
     border-style: none;
@@ -54,3 +53,27 @@ input{
     padding-left: 2em;
     width: 600px
 }
+
+
+
+@media screen and (max-width:730px) {
+    form{
+        margin: 0 2em;
+    }
+    
+}
+
+.input-padrao{
+    width: 100%;
+}
+
+.tabela-produtos{
+    margin: 2em;
+    text-align: center;
+    font-size: 13px;
+
+
+}
+
+
+

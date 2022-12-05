@@ -30,7 +30,7 @@
 
     <main>
         <section class="formulario-produtos">
-            <form>
+            <form id="formulario-produtos">
                 <div class="formulario-vendas__div">
                     <label for="produto" class="label">Produto:</label><br>
                     <input type="text" id="nome" class="input-padrao" placeholder="Digite o nome do produto" oninput="" required>
@@ -42,7 +42,7 @@
                     <span class="formulario__span--produto"></span>
                 </div>
                 <div class="formulario-vendas"><br>
-                    <input type="submit" value="Adicionar produto" class="adicionar">
+                    <input type="submit" value="Adicionar produto" id="adicionar">
                 <div>
             </form>
         </section>
@@ -65,9 +65,21 @@
             </table>
         </section>
 
+        <section>
+            <table id="tabela-areceber">
+                <tr class="areceber__tr">
+                    <td class="areceber__td">Valor a receber</td> 
+                    <td class="areceber__td" id="areceber"> R$ 2.000,00</td>
+                </tr>
+            </table>
+        </section>
+
 
     </main>
+
+    <script src="../assets/js/main.js"></script>
 
 
 </body>
 </html>
+

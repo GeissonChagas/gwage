@@ -1,7 +1,7 @@
 @import url(../css/reset.css);
 @import url(../css/header.css);
 @import url(../css/tabela.css);
-@import url(../css/formulario-produto.css);
+@import url(../css/formulario.css);
 
 :root{
     font-family: 'Open Sans';
@@ -12,6 +12,14 @@ body{
     background-image: url(../img/background2.png);
     background-position: 100% 0%;
 
+}
+
+@media screen and (max-width:730px) {
+    body{
+        background-image: linear-gradient(to bottom right, #000000, #2e2e2e );
+        background-repeat: no-repeat;
+    }
+    
 }
 
 
