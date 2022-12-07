@@ -32,13 +32,13 @@
         <section class="formulario-produtos">
             <form id="formulario-produtos">
                 <div class="formulario-vendas__div">
-                    <label for="produto" class="label">Produto:</label><br>
-                    <input type="text" id="nome" class="input-padrao" placeholder="Digite o nome do produto" oninput="" required>
+                    <label for="produto" class="label" >Produto:</label><br>
+                    <input type="text" id="produto" class="input-padrao" name="produto" placeholder="Digite o nome do produto" oninput="" required>
                     <span class="formulario__span--produto"></span>
                 </div>
                 <div class="formulario-vendas__div">
                     <label for="preço" class="label">Preço:</label><br>
-                    <input type="text" id="preço" class="input-padrao" placeholder="Digite o preço do produto" oninput="" required>
+                    <input type="text" id="preco" class="input-padrao" name="preco" placeholder="Digite o preço do produto" oninput="" required>
                     <span class="formulario__span--produto"></span>
                 </div>
                 <div class="formulario-vendas"><br>
@@ -49,19 +49,23 @@
 
         <section class="tabela-produtos">
             <table class="produto">
-                <tr class="produto__tr">
-                    <td class="produto__td">Item:</td>
-                    <td class="produto__td">Nome do produto:</td>
-                    <td class="produto__td">Preço do produto</td>
-                    <td class="produto__td">Excluir:</td>
+                <thead id="thead-produtos">
+                    <tr class="produto__tr">
+                        <td class="produto__td">Item:</td>
+                        <td class="produto__td">Nome do produto:</td>
+                        <td class="produto__td">Preço do produto</td>
+                        <td class="produto__td">Excluir:</td>
+                    </tr>
+                </thead>    
 
-                </tr>
+            <tbody id="tbody">
                 <tr class="produto__td">
                     <td class="produto__td">01</td> 
                     <td class="produto__td">Placa de vídeo gtx 2060 6gb</td>
                     <td class="produto__td">2.000,00</td>
                     <td class="produto__excluir">x</td>
                 </tr>
+            </tbody>
             </table>
         </section>
 
