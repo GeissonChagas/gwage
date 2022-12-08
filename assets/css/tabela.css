@@ -7,7 +7,7 @@
 }
 
 
-.produto__td, .comissao__td{
+.produto__td, .produto__tr, .comissao__td, .preco__td {
     background-color: #2e2e2e;
     border: 1px solid #525050;
     margin: 0.25em 1em; 

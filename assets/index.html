@@ -32,6 +32,11 @@
         <section class="formulario-produtos">
             <form id="formulario-produtos">
                 <div class="formulario-vendas__div">
+                    <label for="produto" class="label" >Unidades:</label><br>
+                    <input type="text" id="unidades" class="input-padrao" name="unidades" placeholder="Digite a quantidade" oninput="" required>
+                    <span class="formulario__span--unidades"></span>
+                </div>
+                <div class="formulario-vendas__div">
                     <label for="produto" class="label" >Produto:</label><br>
                     <input type="text" id="produto" class="input-padrao" name="produto" placeholder="Digite o nome do produto" oninput="" required>
                     <span class="formulario__span--produto"></span>
@@ -42,7 +47,7 @@
                     <span class="formulario__span--produto"></span>
                 </div>
                 <div class="formulario-vendas"><br>
-                    <input type="submit" value="Adicionar produto" id="adicionar">
+                    <input type="submit" value="Adicionar produto" id="adicionar" class="adicionar">
                 <div>
             </form>
         </section>
@@ -51,7 +56,7 @@
             <table class="produto">
                 <thead id="thead-produtos">
                     <tr class="produto__tr">
-                        <td class="produto__td">Item:</td>
+                        <td class="produto__td">Und:</td>
                         <td class="produto__td">Nome do produto:</td>
                         <td class="produto__td">Preço do produto</td>
                         <td class="produto__td">Excluir:</td>
@@ -59,11 +64,11 @@
                 </thead>    
 
             <tbody id="tbody">
-                <tr class="produto__td">
-                    <td class="produto__td">01</td> 
+                <tr class="produto__tr">
+                    <td class="produto__td">1</td>
                     <td class="produto__td">Placa de vídeo gtx 2060 6gb</td>
-                    <td class="produto__td">2.000,00</td>
-                    <td class="produto__excluir">x</td>
+                    <td class="preco__td">2000</td>
+                    <td class="produto__excluir" id="excluir">x</td>
                 </tr>
             </tbody>
             </table>
@@ -73,7 +78,7 @@
             <table id="tabela-areceber">
                 <tr class="areceber__tr">
                     <td class="areceber__td">Valor a receber</td> 
-                    <td class="areceber__td" id="areceber"> R$ 2.000,00</td>
+                    <td class="areceber__td" id="areceber">2000</td>
                 </tr>
             </table>
         </section>
@@ -81,7 +86,9 @@
 
     </main>
 
-    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/adiciona-tabela.js"></script>
+    <script src="../assets/js/areceber.js"></script>
+    <script src="../assets/js/excluir.js"></script>
 
 
 </body>
