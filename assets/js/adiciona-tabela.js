@@ -41,9 +41,21 @@ adicionaItens.addEventListener("submit", function(evento){
     produtoTr.appendChild(excluirTd);
 
     let tabela = document.getElementById('tbody')
-    tabela.appendChild(produtoTr)
+    tabela.appendChild(produtoTr);
+
+    // Apaga oque foi escrito no input:
+    let inputUnidades = document.querySelector('#unidades');
+    inputUnidades.value = "";
+
+    let inputProduto = document.querySelector('#produto');
+    inputProduto.value = "";
+
+    let inputPreco = document.querySelector('#preco');
+    inputPreco.value = "";
 
 
-  
+
+ 
 
 })
+
