@@ -1,5 +1,4 @@
 // Adiciona produtos na tabela:
-
 const adicionaItens = document.getElementById("formulario-produtos");    
 
 adicionaItens.addEventListener("submit", function(evento){
@@ -15,7 +14,7 @@ adicionaItens.addEventListener("submit", function(evento){
 
 
     let produtoTd = document.createElement("td")
-    produtoTr.setAttribute('class', 'produto__td')
+    produtoTd.setAttribute('class', 'produto__td')
 
 
     let precoTd = document.createElement("td")
@@ -24,6 +23,8 @@ adicionaItens.addEventListener("submit", function(evento){
 
     let excluirTd = document.createElement("td")
     excluirTd.setAttribute('class', 'produto__excluir')
+    excluirTd.setAttribute('id', 'excluir');
+
 
 
     let excluir = document.getElementById('excluir')
@@ -32,7 +33,7 @@ adicionaItens.addEventListener("submit", function(evento){
     unidadesTd.textContent = form.unidades.value;
     produtoTd.textContent = form.produto.value;
     precoTd.textContent = ((form.preco.value)*(form.unidades.value));
-    excluirTd.textContent = excluir.textContent;
+    excluirTd.textContent = excluir.innerText;
 
 
     produtoTr.appendChild(unidadesTd);
@@ -53,9 +54,8 @@ adicionaItens.addEventListener("submit", function(evento){
     let inputPreco = document.querySelector('#preco');
     inputPreco.value = "";
 
-
-
- 
-
 })
+
+
+
 

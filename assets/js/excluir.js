@@ -1,11 +1,9 @@
-const excluir = document.querySelectorAll(".produto__excluir");
-const tabela = document.querySelector('#excluir');
+const tabela = document.querySelector('#tbody');
 
 tabela.addEventListener("click", function(evento){
-    
-     let alvo = evento.target;
-    let alvoPai = alvo.parentNode;
 
-    alvoPai.remove();
-
+    if(evento.target.className == 'produto__excluir') {
+        evento.target.parentNode.remove();
+        somaTotal();
+    }
 })
