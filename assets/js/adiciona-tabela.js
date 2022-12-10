@@ -1,12 +1,5 @@
 // Adiciona produtos na tabela:
-
-const adicionaItens = document.getElementById("formulario-produtos");
-const tds = JSON.parse(localStorage.getItem("tds")) || [];   
-
-tds.forEach(element => {
-    console.log(element.unidades, element.produto, element.preco)
-    
-});
+const adicionaItens = document.getElementById("formulario-produtos");    
 
 adicionaItens.addEventListener("submit", function(evento){
     evento.preventDefault()
@@ -30,18 +23,19 @@ adicionaItens.addEventListener("submit", function(evento){
 
     let excluirTd = document.createElement("td")
     excluirTd.setAttribute('class', 'produto__excluir')
+    excluirTd.setAttribute('id', 'excluir');
+
 
     let unidades = form.unidades.value;
     let produto  = form.produto.value;
     let preco    = ((form.preco.value)*(form.unidades.value));
     let excluir = document.getElementById('excluir');
-    
 
-        
-    unidadesTd.textContent = unidades;
-    produtoTd.textContent = produto;
-    precoTd.textContent = preco;
-    excluirTd.textContent = excluir.textContent;
+
+    unidadesTd.textContent = form.unidades.value;
+    produtoTd.textContent = form.produto.value;
+    precoTd.textContent = ((form.preco.value)*(form.unidades.value));
+    excluirTd.textContent = excluir.innerText;
 
 
     produtoTr.appendChild(unidadesTd);
@@ -62,23 +56,8 @@ adicionaItens.addEventListener("submit", function(evento){
     let inputPreco = document.querySelector('#preco');
     inputPreco.value = "";
 
-    //adiciona itens no local storage
-
-    const itemAtual = {
-        "unidades": unidades,
-        "produto": produto,
-        "preco": preco
-    }
-
-    tds.push(itemAtual)
-
-    localStorage.setItem('tds', JSON.stringify(tds))
-
-
-
-    
-
-
 })
+
+
 
 
