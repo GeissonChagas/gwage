@@ -1,6 +1,7 @@
 // Adiciona produtos na tabela:
 const adicionaItens = document.getElementById("formulario-produtos");    
 
+
 adicionaItens.addEventListener("submit", function(evento){
     evento.preventDefault()
 
@@ -44,7 +45,8 @@ adicionaItens.addEventListener("submit", function(evento){
     let tabela = document.getElementById('tbody')
     tabela.appendChild(produtoTr);
 
-    // Apaga oque foi escrito no input:
+// Apaga oque foi escrito no input:
+
     let inputUnidades = document.querySelector('#unidades');
     inputUnidades.value = "";
 
@@ -56,17 +58,24 @@ adicionaItens.addEventListener("submit", function(evento){
 
 })
 
-    //adiciona itens no local storage
+//adiciona itens no local storage
 
+    const tds = JSON.parse(localStorage.getItem("tds")) || [];
+
+    tds.forEach((element) => {
+    console.log(element.unidades, element.produto, element. preco)
+})
+    
     const itemAtual = {
-        "unidades": unidades,
-        "produto": produto,
-        "preco": preco
+        "unidades": unidades.value,
+        "produto": produto.value,
+        "preco": preco.value
     }
 
     tds.push(itemAtual)
 
     localStorage.setItem('tds', JSON.stringify(tds))
+
 
 
     
