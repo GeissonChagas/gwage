@@ -24,7 +24,7 @@
 
 }   
 
-.areceber__td{
+.areceber__td, .somavalor__td{
     background-color: #2e2e2e;
     border: 1px solid #525050;
     margin: 0.25em 1em; 
@@ -33,12 +33,12 @@
 
 }
 
-#tabela-areceber{
+#tabela-areceber, #tabela-soma{
     margin: 1em auto;
 
 }
 
-#areceber{
+#areceber, #somavalor{
     background-color: #03bb85;
     font-weight: 600;
 }

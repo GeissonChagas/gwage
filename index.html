@@ -29,6 +29,7 @@
     </header>
 
     <main>
+        <!--Formulário de produtos -->
         <section class="formulario-produtos">
             <form id="formulario-produtos">
                 <div class="formulario-vendas__div">
@@ -48,10 +49,12 @@
                 </div>
                 <div class="formulario-vendas"><br>
                     <input type="submit" value="Adicionar produto" id="adicionar" class="adicionar">
+
                 <div>
             </form>
         </section>
 
+        <!--Tabela de produtos -->
         <section class="tabela-produtos">
             <table class="produto">
                 <thead id="thead-produtos">
@@ -74,12 +77,22 @@
             </table>
         </section>
 
+        
         <section>
-            <table id="tabela-areceber">
-                <tr class="areceber__tr">
-                    <td class="areceber__td">Valor a receber</td> 
-                    <td class="areceber__td" id="areceber"></td>
+            <!-- tabela de soma -->
+            <table id="tabela-soma">
+                <tr class="somavalor__tr">
+                    <td class="somavalor__td">Total de vendas</td> 
+                    <td class="somavalor__td" id="somavalor">0</td>
                 </tr>
+            </table>
+            <!--Formulário de comissão -->
+                <table id="tabela-areceber">
+                    <tr class="areceber__tr">
+                        <td class="areceber__td">Valor a receber</td> 
+                        <td class="areceber__td" id="areceber">0</td>
+                    </tr>
+                </table>
             </table>
         </section>
 
@@ -89,6 +102,7 @@
     <script src="assets/js/adiciona-tabela.js"></script>
     <script src="assets/js/areceber.js"></script>
     <script src="assets/js/excluir.js"></script>
+    <script src="assets/js/comissao.js"></script>
 
 
 </body>

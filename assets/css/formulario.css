@@ -29,7 +29,7 @@ input{
     font-family: 'Open Sans';
 }
 
-#adicionar{
+.adicionar{
     background-color:  #03bb85;
     border-radius: 8px;
     border-style: none;
@@ -54,6 +54,29 @@ input{
     width: 600px
 }
 
+
+.formulario-comissao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+}
+
+.resultado-comissao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    font-size: 36px;
+}
+
+#comissao__valor{
+    background-color: #03bb85;
+    border: 1px solid #f2f2f2;
+    padding: 1rem;
+    font-size: 18px;
+    border-radius: 8px;
+}
 
 
 @media screen and (max-width:730px) {

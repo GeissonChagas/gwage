@@ -30,26 +30,27 @@
 
     <main>
 
-        <section class="formulario-comissão">
-            <form>
-                <div class="formulario-comissão__div">
-                    <label for="gostaria-receber" class="label">Quanto gostaria de receber?</label><br>
-                    <input type="text" id="gostaria-receber" class="input-padrao" name="gostaria-de-receber" placeholder="Digite o quanto gostaria de receber:" oninput="" required>
-                    <span class="formulario__span--gostaria-receber"></span>
-                </div>
-                <div class="formulario-adicionar"><br>
-                    <input type="submit" value="Adicionar produto" id="adicionar" class="adicionar">
-                <div>
-            </form>
-        </section>
-
-
-        <section class="lista-comissao">
-            <ul class=comissao>
-                <li id = "comissao__valor">0</li>
-            </ul>
-        </section>
-
+        <main>
+            <section class="formulario-comissao">
+                <form>
+                    <div class="formulario-comissao__div">
+                        <label for="gostaria-receber" class="label">Quanto gostaria de receber?</label><br>
+                        <input type="text" id="gostaria-receber" class="input-padrao" name="gostaria-de-receber" placeholder="Digite o quanto gostaria de receber:" oninput="" required>
+                        <span class="formulario__span--gostaria-receber"></span>
+                    </div>
+                    <div class="formulario-adicionar"><br>
+                        <input type="button" value="Calcular comissão" id="calcular-comissao" class="adicionar">
+                    <div>
+                </form>
+            </section>
+        
+            <section class="resultado-comissao" id="resultado-comissao">
+                <ul class=comissao>
+                    <li id="comissao__valor">0</li>
+                </ul>
+            </section>
+        </main>
+        
     </main>
 
 

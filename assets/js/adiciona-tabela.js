@@ -58,24 +58,7 @@ adicionaItens.addEventListener("submit", function(evento){
 
 })
 
-//adiciona itens no local storage
-
-    const tds = JSON.parse(localStorage.getItem("tds")) || [];
-
-    tds.forEach((element) => {
-    console.log(element.unidades, element.produto, element. preco)
-})
-    
-    const itemAtual = {
-        "unidades": unidades.value,
-        "produto": produto.value,
-        "preco": preco.value
-    }
-
-    tds.push(itemAtual)
-
-    localStorage.setItem('tds', JSON.stringify(tds))
 
 
 
-    
+
